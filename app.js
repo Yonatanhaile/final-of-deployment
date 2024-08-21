@@ -33,12 +33,11 @@ app.post("/", function(req, res){
     };
     
     const jsonData = JSON.stringify(data);
-
+    console.log(process.env.API_KEY)
     const url = "https://us8.api.mailchimp.com/3.0/lists/e959d043df";
     const Option  = {
         method: "POST",
         auth: "yona1:"+process.env.API_KEY
-        //b7c1d2ac2bb2014e37b2ea13d2013678-us8
     }
     
     const request = https.request(url, Option, function(response){
@@ -68,9 +67,3 @@ app.listen(process.env.PORT || 3000, function(){
     console.log("Server is running on port 3000");
     
 })
-
-// API Key
-// 013d01442d9d20ea247529f9d3d11265-us8
-
-// Audience(List) Id 
-// e959d043df
