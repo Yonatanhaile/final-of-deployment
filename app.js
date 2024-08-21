@@ -38,7 +38,8 @@ app.post("/", function(req, res){
 
     const Option  = {
         method: "POST",
-        auth: "yona1:1ac749eb64797ddad059801d9e01d49-us8"
+        auth: "yona1:0fdb88afbbcbcfab00f82415206d0292-us8"
+        //0fdb88afbbcbcfab00f82415206d0292-us8
     }
     
     const request = https.request(url, Option, function(response){
@@ -70,7 +71,7 @@ app.listen(process.env.PORT || 3000, function(){
 })
 
 // API Key
-// a1ac749eb64797ddad059801d9e01d49-us8
+// 013d01442d9d20ea247529f9d3d11265-us8
 
 // Audience(List) Id 
 // e959d043df
