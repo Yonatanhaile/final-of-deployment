@@ -35,11 +35,10 @@ app.post("/", function(req, res){
     const jsonData = JSON.stringify(data);
 
     const url = "https://us8.api.mailchimp.com/3.0/lists/e959d043df";
-
     const Option  = {
         method: "POST",
-        auth: "yona1:195fde562e8f8426fd6099fc6052d1bf-us8"
-        //195fde562e8f8426fd6099fc6052d1bf-us8
+        auth: "yona1:"+process.env.API_KEY
+        //b7c1d2ac2bb2014e37b2ea13d2013678-us8
     }
     
     const request = https.request(url, Option, function(response){
